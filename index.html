@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-brasil" >
+<head>
+  <!-- END Pixel Code -->
+  <script language="JavaScript">
+    function protegercodigo() {
+    if (event.button==2||event.button==3){
+        alert('Código protegido por: nowlink 🔗');}
+    }
+    document.onmousedown=protegercodigo
+</script>
+<script>
+if (document.addEventListener) {
+    document.addEventListener("keydown", bloquearSource);
+} else { //Versões antigas do IE
+    document.attachEvent("onkeydown", bloquearSource);
+}
+
+function bloquearSource(e) {
+    e = e || window.event;
+
+    var code = e.which || e.keyCode;
+
+    if (
+        e.ctrlKey &&
+        (code == 83 || code == 85) //83 = S, 85 = U
+    ) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            e.returnValue = false;
+        }
+
+        return false;
+    }
+}
+</script>
+  <meta charset="UTF-8">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="favicon.png" />
+  <title>nolink</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Open+Sans:300,400,600', 'Droid+Serif:400,700', 'Kalam']
+    }
+  });
+</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="o-main">
+  <div class="o-content">
+    <center><img src="nolink-logo.png" alt="nolink" width=180 height=79></center>
+  </div>
+</div>
+  </a>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
